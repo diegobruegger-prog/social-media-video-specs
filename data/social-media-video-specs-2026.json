@@ -1,0 +1,1182 @@
+{
+ "title": "Social video upload specs 2026",
+ "updated": "2026-10-13",
+ "rows": [
+  {
+   "platform": "Instagram",
+   "format": "Reels",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": "1440x2560",
+   "min_resolution": "720 px",
+   "max_duration_seconds": 1200,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4",
+    "MOV"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 2200,
+   "visible_caption_chars": 125,
+   "hashtag_limit": 5,
+   "title_char_limit": null,
+   "notes": "Help Centre: aspect ratio between 1.91:1 and 9:16, minimum 30 fps and minimum 720 px resolution; record or upload up to 20 minutes; Reels over 3 minutes are not recommended to new audiences. 1440x2560 is Meta's Ads Guide recommendation for Reels placements (no organic resolution is published). File types, 3 s minimum, 23 to 60 fps, 1920 px max width and 2,200-character caption come from the Graph API spec (API publishing is capped at 15 min and 300 MB; Reels ads allow 4 GB). Graph API still says 30 hashtags; the Help Centre now says 5, which is used here. Cover photo recommended 420x654 px (1:1.55). Visible caption length (125) is an industry figure.",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/1038071743007909",
+     "title": "Reel size and aspect ratios on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/2720958398006062",
+     "title": "Record a reel on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Use hashtags on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "IG User Media, Instagram Graph API reference (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels",
+     "title": "Video ad specs on Instagram Reels (Meta Ads Guide)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Instagram",
+   "format": "Feed video",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": null,
+   "min_resolution": "720 px",
+   "max_duration_seconds": 1200,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4",
+    "MOV"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 2200,
+   "visible_caption_chars": 125,
+   "hashtag_limit": 5,
+   "title_char_limit": null,
+   "notes": "There is no separate single-video feed format anymore: since July 2022 new single video posts are shared as Reels, so Reels specs apply. Exception: videos inside a carousel are not Reels and do not appear in the Reels tab (see Carousel row). Limits above mirror the Reels row.",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/1038071743007909",
+     "title": "Reel size and aspect ratios on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/2720958398006062",
+     "title": "Record a reel on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/269314186824048/",
+     "title": "Share a post with multiple photos or videos on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Use hashtags on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "IG User Media, Instagram Graph API reference (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://techcrunch.com/2022/07/21/instagram-video-posts-shorter-than-15-minutes-now-shared-reels/",
+     "title": "Instagram video posts shorter than 15 minutes will now be shared as Reels (TechCrunch, 2022-07-21)",
+     "type": "industry"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Instagram",
+   "format": "Stories",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": "1440x2560",
+   "min_resolution": null,
+   "max_duration_seconds": 60,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4",
+    "MOV"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": null,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "60 s max and 3 s min per story video, MOV/MP4, 23 to 60 fps and 9:16 come from the Graph API Story spec (API file cap 100 MB; story images JPEG, 8 MB). 1440x2560 is the Meta Ads Guide recommendation for Stories. No organic Help Centre spec page for Stories could be verified. Stories stay visible for 24 hours.",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "IG User Media, Instagram Graph API reference (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-story",
+     "title": "Video ad specs on Instagram Stories (Meta Ads Guide)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "Instagram",
+   "format": "Feed photo",
+   "aspect_ratios": [
+    "1.91:1",
+    "1:1",
+    "4:5",
+    "3:4"
+   ],
+   "recommended_resolution": "1080x1440",
+   "min_resolution": "320 px width",
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 8,
+   "file_types": [
+    "JPEG"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 2200,
+   "visible_caption_chars": 125,
+   "hashtag_limit": 5,
+   "title_char_limit": null,
+   "notes": "Help Centre: photos are shared at up to 1,080 px wide; aspect ratios between 1.91:1 and 3:4 (1080 wide, 566 to 1440 tall) keep original resolution, others are cropped; below 320 px width is upscaled. Graph API still lists 4:5 to 1.91:1, JPEG only, 8 MB max and 320 to 1440 px width (API values used for file type and size). Visible caption length is an industry figure.",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/1631821640426723/",
+     "title": "Image resolution of photos you share on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Use hashtags on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "IG User Media, Instagram Graph API reference (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Instagram",
+   "format": "Carousel",
+   "aspect_ratios": [
+    "1.91:1",
+    "1:1",
+    "4:5",
+    "3:4"
+   ],
+   "recommended_resolution": "1080x1440",
+   "min_resolution": "320 px width",
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 8,
+   "file_types": [
+    "JPEG",
+    "MP4",
+    "MOV"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 2200,
+   "visible_caption_chars": 125,
+   "hashtag_limit": 5,
+   "title_char_limit": null,
+   "notes": "Up to 20 photos and videos per carousel in the app (Graph API: 2 to 10 items). One orientation (square, portrait or landscape) applies to all items. One caption and location for the whole post. Videos in carousels are not Reels. Music cannot be added to carousels that contain videos. Image size and type limits are the Graph API image spec (8 MB JPEG).",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/269314186824048/",
+     "title": "Share a post with multiple photos or videos on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/1631821640426723/",
+     "title": "Image resolution of photos you share on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Use hashtags on Instagram (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "IG User Media, Instagram Graph API reference (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "TikTok",
+   "format": "Video",
+   "aspect_ratios": [
+    "9:16",
+    "1:1",
+    "16:9"
+   ],
+   "recommended_resolution": "1080x1920",
+   "min_resolution": "540x960 (9:16, ads spec); 360 px per side (API)",
+   "max_duration_seconds": 3600,
+   "min_duration_seconds": null,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4",
+    "MOV",
+    "WebM"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 2200,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Support: recorded in-app up to 10 min, uploaded up to 60 min. API (Content Posting): MP4/WebM/MOV, H.264/H.265/VP8/VP9, 23 to 60 fps, 360 to 4096 px, 4 GB max; API posting length depends on the creator (3, 5 or 10 min). Aspect ratios and 540x960 minimum come from TikTok Ads (non-Spark in-feed ads: 500 MB max, up to 10 min). 1080x1920 is an industry recommendation. Caption: the official API allows 2,200 UTF-16 characters; many third-party sites claim 4,000 in-app, but no official TikTok page confirming 4,000 was found.",
+   "sources": [
+    {
+     "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/camera-tools",
+     "title": "Camera tools, Video length (TikTok Support)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide",
+     "title": "Content Posting API, Media transfer guide (TikTok for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+     "title": "Content Posting API, Direct Post reference (TikTok for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads",
+     "title": "TikTok Auction In-Feed Ads specs (TikTok Ads Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-video-specs-guide/",
+     "title": "Social media video specs guide, updated May 13, 2026 (Sprout Social)",
+     "type": "industry"
+    },
+    {
+     "url": "https://www.hootsuite.com/whats-new/expanded-tiktok-caption-length-in-create",
+     "title": "Expanded TikTok caption length in Create (Hootsuite, 2025-10-10)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "TikTok",
+   "format": "Photo mode / carousel",
+   "aspect_ratios": null,
+   "recommended_resolution": null,
+   "min_resolution": null,
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 20,
+   "file_types": [
+    "JPEG",
+    "WebP"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 4000,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": 90,
+   "notes": "Support: up to 35 photos per post in the app. API: JPEG or WebP, max 1080p, 20 MB per image, up to 35 image URLs, title max 90 and description max 4,000 UTF-16 characters. No official aspect ratio for photo posts was found.",
+   "sources": [
+    {
+     "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/making-a-post",
+     "title": "Making a post (TikTok Support)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-media-transfer-guide",
+     "title": "Content Posting API, Media transfer guide (TikTok for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "title": "Content Posting API, Photo Post reference (TikTok for Developers)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "YouTube",
+   "format": "Long-form video",
+   "aspect_ratios": [
+    "16:9"
+   ],
+   "recommended_resolution": null,
+   "min_resolution": null,
+   "max_duration_seconds": 43200,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 262144,
+   "file_types": [
+    "MOV",
+    "MPEG-1",
+    "MPEG-2",
+    "MPEG4",
+    "MP4",
+    "MPG",
+    "AVI",
+    "WMV",
+    "MPEGPS",
+    "FLV",
+    "3GPP",
+    "WebM",
+    "DNxHR",
+    "ProRes",
+    "CineForm",
+    "HEVC (H.265)"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 5000,
+   "visible_caption_chars": null,
+   "hashtag_limit": 60,
+   "title_char_limit": 100,
+   "notes": "Max 256 GB or 12 hours, whichever is less (256 GB converted at 1024 MB per GB). Default limit is 15 minutes; longer uploads need a verified account. 16:9 is the standard player ratio; encoding guide covers up to 8K and recommends MP4, H.264, AAC-LC, same frame rate as recorded (24/25/30/48/50/60 common, others accepted). caption_char_limit is the description limit. If a video has more than 60 hashtags, all are ignored; up to 3 show by the title.",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/71673?hl=en",
+     "title": "Upload videos longer than 15 minutes (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/1722171?hl=en",
+     "title": "YouTube recommended upload encoding settings (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/troubleshooter/2888402?hl=en",
+     "title": "Supported YouTube file formats (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en&co=GENIE.Platform%3DDesktop",
+     "title": "Edit video settings (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "title": "Find playlists and videos using hashtags (YouTube Help)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "YouTube",
+   "format": "Shorts",
+   "aspect_ratios": [
+    "9:16",
+    "1:1"
+   ],
+   "recommended_resolution": "1080x1920",
+   "min_resolution": null,
+   "max_duration_seconds": 180,
+   "min_duration_seconds": null,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MOV",
+    "MP4",
+    "WebM",
+    "HEVC (H.265)"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 5000,
+   "visible_caption_chars": null,
+   "hashtag_limit": 60,
+   "title_char_limit": 100,
+   "notes": "Square or vertical videos up to 3 minutes are classified as Shorts (standard channels: uploads after 2024-10-15; Official Artist Channels: after 2025-12-08). Help says Shorts can be uploaded at a maximum resolution of 1080p; the 1080x1920 figure is an industry recommendation. Shorts over 1 minute with an active Content ID claim are blocked globally. Use 16:9 to avoid Shorts classification. File types: any YouTube-supported format (subset listed).",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+     "title": "Understand three-minute YouTube Shorts (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "title": "Get started creating YouTube Shorts (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en&co=GENIE.Platform%3DDesktop",
+     "title": "Edit video settings (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "title": "Find playlists and videos using hashtags (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.google.com/youtube/troubleshooter/2888402?hl=en",
+     "title": "Supported YouTube file formats (YouTube Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-video-specs-guide/",
+     "title": "Social media video specs guide, updated May 13, 2026 (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "YouTube",
+   "format": "Thumbnail",
+   "aspect_ratios": [
+    "16:9",
+    "9:16"
+   ],
+   "recommended_resolution": "3840x2160",
+   "min_resolution": "640 px width (videos); 640 px height (Shorts)",
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 50,
+   "file_types": [
+    "JPG",
+    "PNG"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": null,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Recommended 3840x2160 for videos and 2160x3840 for Shorts. Size limit 50 MB on desktop, 2 MB on mobile (10 MB for podcasts). Podcast playlists use 1:1. Vertical videos with 16:9 custom thumbnails get an auto-generated 4:5 thumbnail on home, explore and subscriptions.",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "title": "Add custom thumbnails on YouTube (YouTube Help)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "YouTube",
+   "format": "Channel banner",
+   "aspect_ratios": [
+    "16:9"
+   ],
+   "recommended_resolution": "2560x1440",
+   "min_resolution": "2048x1152",
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 6,
+   "file_types": null,
+   "max_frame_rate": null,
+   "caption_char_limit": null,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Safe area for text and logos at minimum size: 1235x338 px. Same banner is used on computer, mobile and TV but is cropped differently. No borders, shadows or frames. Banner file types are not listed on the help page.",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/10456525?hl=en&co=GENIE.Platform%3DDesktop",
+     "title": "Manage your channel branding (YouTube Help)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "Facebook",
+   "format": "Reels",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": "1080x1920",
+   "min_resolution": "540x960",
+   "max_duration_seconds": null,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 63206,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Since June 2025 all Facebook videos (except stories and live) are shared as reels and can be any length or orientation, so no max duration is given. Requirements page: MP4 recommended, 1080p, H.264/H.265 (VP9, AV1 supported), 24 to 60 fps, AAC stereo 128 kbps+. 1080x1920 / 540x960 minimum and 3 s minimum come from the Reels Publishing API, which still limits API reels to 3 to 90 s. Caption limit 63,206 is an industry figure.",
+   "sources": [
+    {
+     "url": "https://www.facebook.com/help/android-app/2862139500770200",
+     "title": "Create a reel on Facebook (Facebook Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/help/1197310377458196",
+     "title": "Requirements for Facebook Reels (Meta Business Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/help/2683452421955589",
+     "title": "Create a Facebook reel (Meta Business Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/video-api/guides/reels-publishing",
+     "title": "Reels Publishing API (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Facebook",
+   "format": "Feed video",
+   "aspect_ratios": [
+    "16:9",
+    "1:1",
+    "4:5",
+    "9:16"
+   ],
+   "recommended_resolution": "1440x1800",
+   "min_resolution": "120x120",
+   "max_duration_seconds": 14460,
+   "min_duration_seconds": 1,
+   "max_file_size_mb": 4096,
+   "file_types": [
+    "3g2",
+    "3gp",
+    "3gpp",
+    "asf",
+    "avi",
+    "dat",
+    "divx",
+    "dv",
+    "f4v",
+    "flv",
+    "gif",
+    "m2ts",
+    "m4v",
+    "mkv",
+    "mod",
+    "mov",
+    "mp4",
+    "mpe",
+    "mpeg",
+    "mpeg4",
+    "mpg",
+    "mts",
+    "nsv",
+    "ogm",
+    "ogv",
+    "qt",
+    "tod",
+    "ts",
+    "vob",
+    "wmv"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 63206,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Organic feed videos are now reels (June 2025), see Reels row. Numbers here are Meta's Feed video ad specs: 4:5 recommended at 1440x1800, 1 s to 241 min, 4 GB, min 120x120 px. Meta's older video requirements chart says 240 min max and 16:9 to 9:16 for feed. MP4 or MOV recommended; file type list is from the Facebook Help Centre.",
+   "sources": [
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-feed",
+     "title": "Video ad specs on Facebook Feed (Meta Ads Guide)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/m/one-sheeters/video-requirements",
+     "title": "Facebook video requirements chart (Meta for Business)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/help/218673814818907",
+     "title": "What video file formats can you upload on Facebook (Facebook Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/help/2683452421955589",
+     "title": "Create a Facebook reel (Meta Business Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://sproutsocial.com/insights/social-media-character-counter/",
+     "title": "Social media character counter (Sprout Social)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Facebook",
+   "format": "Stories",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": "1080x1920",
+   "min_resolution": "540x960",
+   "max_duration_seconds": 60,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": null,
+   "file_types": [
+    "MP4"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": null,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Page Stories API: 9:16, 1080x1920 recommended (540x960 min), 24 to 60 fps, MP4 recommended, video story max 60 s; story photos JPEG/BMP/PNG/GIF/TIFF up to 10 MB. Facebook stories ad spec recommends 1440x2560, 1 s to 3 min, 4 GB. Stories are visible for 24 hours and also appear on Messenger.",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/page-stories-api/",
+     "title": "Page Stories API (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-story",
+     "title": "Video ad specs on Facebook stories (Meta Ads Guide)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.facebook.com/help/1825407747718430",
+     "title": "Share a photo or video to your story on Facebook (Facebook Help Centre)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "X (Twitter)",
+   "format": "Video",
+   "aspect_ratios": [
+    "16:9",
+    "1:1",
+    "9:16",
+    "4:5",
+    "2:3",
+    "1.91:1"
+   ],
+   "recommended_resolution": "1920x1080 (16:9) or 1080x1920 (9:16)",
+   "min_resolution": "32x32",
+   "max_duration_seconds": 140,
+   "min_duration_seconds": 0.5,
+   "max_file_size_mb": 512,
+   "file_types": [
+    "MP4",
+    "MOV"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 280,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Help Center: non-Premium uploads up to 140 s and 512 MB; Premium up to 4 hours (1080p under 2 h, 720p from 2 to 4 h) and 16 GB. Posts: 280 characters, Premium up to 25,000. Aspect ratios, recommended sizes, MP4/MOV and 60 fps come from X Ads creative specs. X API docs list different defaults (0.5 s to 20 min, 8 GB, 32x32 to 1280x1024, 1:3 to 3:1); the Help Center values are used here. Up to 4 media items per post.",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/x-videos",
+     "title": "How to share and watch videos on X (X Help Center)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "How to Post (X Help Center)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "title": "About X Premium (X Help Center)",
+     "type": "official"
+    },
+    {
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications",
+     "title": "X Ads creative specs (X Business)",
+     "type": "official"
+    },
+    {
+     "url": "https://docs.x.com/x-api/media/quickstart/best-practices",
+     "title": "Media best practices (X API docs)",
+     "type": "official"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "X (Twitter)",
+   "format": "Image",
+   "aspect_ratios": [
+    "16:9",
+    "1:1",
+    "4:5",
+    "2:3",
+    "1.91:1",
+    "9:16"
+   ],
+   "recommended_resolution": "1080x1080 (1:1) or 1920x1080 (16:9)",
+   "min_resolution": null,
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 5,
+   "file_types": [
+    "JPEG",
+    "PNG",
+    "GIF"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 280,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Up to 4 photos per post. Photos up to 5 MB; animated GIFs up to 5 MB on mobile and 15 MB on web. BMP and TIFF not accepted (API docs also list WEBP). Single photos between 2:1 and 3:4 display in full. Attachments do not count toward the character limit. Recommended sizes are from X Ads specs.",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/posting-gifs-and-pictures",
+     "title": "How to post photos or GIFs on X (X Help Center)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "How to Post (X Help Center)",
+     "type": "official"
+    },
+    {
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications",
+     "title": "X Ads creative specs (X Business)",
+     "type": "official"
+    },
+    {
+     "url": "https://docs.x.com/x-api/media/quickstart/best-practices",
+     "title": "Media best practices (X API docs)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "LinkedIn",
+   "format": "Video",
+   "aspect_ratios": [
+    "1:2.4",
+    "2.4:1"
+   ],
+   "recommended_resolution": null,
+   "min_resolution": "256x144",
+   "max_duration_seconds": 900,
+   "min_duration_seconds": 3,
+   "max_file_size_mb": 5120,
+   "file_types": [
+    "MP4",
+    "MOV",
+    "AVI",
+    "WEBM",
+    "MKV",
+    "WMV",
+    "VC1",
+    "MPEG",
+    "MPEG2",
+    "MPEG1VIDEO",
+    "DVVIDEO",
+    "QTRLE",
+    "TSCC2"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 3000,
+   "visible_caption_chars": 140,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Help: 75 KB to 5 GB (5 GB converted at 1024 MB per GB), 3 s min on desktop (2 s on mobile), 15 min max, 256x144 to 4096x2304, aspect ratio range 1:2.4 to 2.4:1, 10 to 60 fps, 192 Kbps to 30 Mbps. ProRes may upload but will not process. Visible text before See more is about 140 characters per Hootsuite (other sites say about 210); treat as approximate.",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a548372",
+     "title": "Video sharing troubleshooting (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "title": "Media file types supported on LinkedIn (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "Post and share updates (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://blog.hootsuite.com/ideal-social-media-post-length/",
+     "title": "Social media post length, ideal sizes for each platform (Hootsuite, 2026-07-14)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "LinkedIn",
+   "format": "Document / carousel",
+   "aspect_ratios": null,
+   "recommended_resolution": null,
+   "min_resolution": null,
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 100,
+   "file_types": [
+    "PDF",
+    "PPT",
+    "PPTX",
+    "DOC",
+    "DOCX"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 3000,
+   "visible_caption_chars": 140,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Max 100 MB and 300 pages, one document per post, word limit one million words. Pages of different sizes must be fit to one size; layered PDFs must be flattened; videos and animations show as static images. Viewers can download it as PDF. The document cannot be swapped after posting. Visible text figure is approximate (Hootsuite).",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a518909",
+     "title": "Upload and share documents on LinkedIn (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "title": "Media file types supported on LinkedIn (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "Post and share updates (LinkedIn Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://blog.hootsuite.com/ideal-social-media-post-length/",
+     "title": "Social media post length, ideal sizes for each platform (Hootsuite, 2026-07-14)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Pinterest",
+   "format": "Video Pin",
+   "aspect_ratios": [
+    "1:1",
+    "2:3",
+    "4:5",
+    "9:16"
+   ],
+   "recommended_resolution": null,
+   "min_resolution": null,
+   "max_duration_seconds": 900,
+   "min_duration_seconds": 4,
+   "max_file_size_mb": 2048,
+   "file_types": [
+    "MP4",
+    "MOV",
+    "M4V"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 800,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": 100,
+   "notes": "Standard width video (usable for ads and organic Pins): H.264 or H.265, up to 2 GB, 4 s to 15 min, aspect ratio between 1:2 and 1.91:1, square or vertical recommended. Title up to 100 characters, first 40 may show in feeds (30 for double-byte languages). Description up to 800 characters and not shown in feeds; some industry sources still say 500.",
+   "sources": [
+    {
+     "url": "https://help.pinterest.com/en/business/article/pinterest-product-specs",
+     "title": "Review ad specs (Pinterest Business Help)",
+     "type": "official"
+    },
+    {
+     "url": "https://support.buffer.com/en-us/articles/character-limits-for-each-social-network-mNDqsEV9Nf",
+     "title": "Character limits for each social network (Buffer Help Center)",
+     "type": "industry"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "Pinterest",
+   "format": "Standard Pin",
+   "aspect_ratios": [
+    "2:3"
+   ],
+   "recommended_resolution": "1000x1500",
+   "min_resolution": null,
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 20,
+   "file_types": [
+    "PNG",
+    "JPEG"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 800,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": 100,
+   "notes": "Max 20 MB on desktop, 32 MB in-app. Pins taller than 2:3 may be cut off in feeds. Images are converted to 8-bit RGB JPEG; upload sRGB PNG for best quality. Title first 40 characters may show in feeds. Description up to 800 characters, not shown in feeds but used for relevance.",
+   "sources": [
+    {
+     "url": "https://help.pinterest.com/en/business/article/pinterest-product-specs",
+     "title": "Review ad specs (Pinterest Business Help)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "Snapchat",
+   "format": "Spotlight",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": "1080x1920",
+   "min_resolution": null,
+   "max_duration_seconds": 300,
+   "min_duration_seconds": 5,
+   "max_file_size_mb": null,
+   "file_types": null,
+   "max_frame_rate": null,
+   "caption_char_limit": null,
+   "visible_caption_chars": null,
+   "hashtag_limit": null,
+   "title_char_limit": null,
+   "notes": "Spotlight needs a vertical video Snap of 5 s or longer. Snap Newsroom (March 2024): create up to 3 min, upload up to 5 min for Chats, Stories and Spotlight; some 2026 industry guides say 3 min max. Monetization: Spotlight videos must be at least 30 s; since 2025-02-01 videos longer than 1 min can be monetized. 1080x1920 / 9:16 is Snap's full-screen ad canvas spec (ads: MP4/MOV H.264, 1 GB); no organic Spotlight resolution or file spec was found. Description and #topics can be added; limits unknown.",
+   "sources": [
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/7012288096532-How-do-I-post-Snaps-to-Spotlight",
+     "title": "How do I post Snaps to Spotlight? (Snapchat Support)",
+     "type": "official"
+    },
+    {
+     "url": "https://newsroom.snap.com/new-creative-and-personalization-features",
+     "title": "More Ways to Create and Personalize (Snap Newsroom, 2024-03-28)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program",
+     "title": "About Snapchat's Monetization Program (Snapchat Support)",
+     "type": "official"
+    },
+    {
+     "url": "https://newsroom.snap.com/snapchat-new-creator-monetization",
+     "title": "Snapchat Introduces New, Unified Monetization Program for Creators (Snap Newsroom)",
+     "type": "official"
+    },
+    {
+     "url": "https://businesshelp.snapchat.com/s/article/top-snap-specs?language=en_US",
+     "title": "Single Image or Video Specifications (Snapchat Business Help Center)",
+     "type": "official"
+    }
+   ],
+   "confidence": "mixed"
+  },
+  {
+   "platform": "Threads",
+   "format": "Video",
+   "aspect_ratios": [
+    "9:16"
+   ],
+   "recommended_resolution": null,
+   "min_resolution": null,
+   "max_duration_seconds": 300,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 1024,
+   "file_types": [
+    "MOV",
+    "MP4"
+   ],
+   "max_frame_rate": 60,
+   "caption_char_limit": 500,
+   "visible_caption_chars": null,
+   "hashtag_limit": 1,
+   "title_char_limit": null,
+   "notes": "Threads API: MOV/MP4, HEVC or H.264, 23 to 60 fps, max 1920 px wide, aspect ratio 0.01:1 to 10:1 (9:16 recommended), 100 Mbps max, 5 min, 1 GB. Meta launch post also says videos up to 5 minutes. Posts 500 characters; since September 2025 a text attachment of up to 10,000 characters can be added. One topic tag per post (up to 50 characters), stored here as hashtag_limit.",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/overview",
+     "title": "Threads API overview, media specifications (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://about.fb.com/news/2023/07/introducing-threads-new-app-text-sharing/",
+     "title": "Introducing Threads (Meta Newsroom, 2023)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/1356090605000312",
+     "title": "Tag a topic in your post on Threads (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://about.fb.com/news/2025/09/attach-text-threads-posts-share-longer-perspectives/",
+     "title": "Attach Text to Your Threads Posts (Meta Newsroom, 2025-09-04)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  },
+  {
+   "platform": "Threads",
+   "format": "Image",
+   "aspect_ratios": null,
+   "recommended_resolution": null,
+   "min_resolution": "320 px width",
+   "max_duration_seconds": null,
+   "min_duration_seconds": null,
+   "max_file_size_mb": 8,
+   "file_types": [
+    "JPEG",
+    "PNG"
+   ],
+   "max_frame_rate": null,
+   "caption_char_limit": 500,
+   "visible_caption_chars": null,
+   "hashtag_limit": 1,
+   "title_char_limit": null,
+   "notes": "Threads API: JPEG and PNG, 8 MB max, width 320 to 1440 px, aspect ratio limit 10:1, sRGB. Carousels: 2 to 20 items (images and videos). 500-character post plus optional 10,000-character text attachment (since September 2025). One topic tag per post.",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/overview",
+     "title": "Threads API overview, media specifications (Meta for Developers)",
+     "type": "official"
+    },
+    {
+     "url": "https://help.instagram.com/1356090605000312",
+     "title": "Tag a topic in your post on Threads (Instagram Help Centre)",
+     "type": "official"
+    },
+    {
+     "url": "https://about.fb.com/news/2025/09/attach-text-threads-posts-share-longer-perspectives/",
+     "title": "Attach Text to Your Threads Posts (Meta Newsroom, 2025-09-04)",
+     "type": "official"
+    }
+   ],
+   "confidence": "official"
+  }
+ ],
+ "changes_2025_2026": [
+  {
+   "platform": "Instagram",
+   "change": "January 2025: maximum Reels length raised from 90 seconds to 3 minutes, and the profile grid switched from squares to vertical rectangles.",
+   "source": "https://www.businesstoday.in/technology/news/story/instagram-head-announces-big-changes-3-minute-reels-and-new-look-for-profile-grid-461527-2025-01-21"
+  },
+  {
+   "platform": "Instagram",
+   "change": "November 2025: Reels camera can record up to 20 minutes. Help Centre now states record and upload up to 20 minutes, but Reels over 3 minutes are not recommended to new audiences.",
+   "source": "https://petapixel.com/2025/11/25/instagram-updates-camera-so-you-can-film-20-minute-reels/"
+  },
+  {
+   "platform": "Instagram",
+   "change": "December 2025: hashtags limited to 5 per post or reel (previously 30). Help Centre now says up to 5; the Graph API reference still says 30.",
+   "source": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/"
+  },
+  {
+   "platform": "Instagram",
+   "change": "Help Centre now lists supported photo aspect ratios as 1.91:1 to 3:4 (1080x1440 max); the Graph API still says 4:5 to 1.91:1. Change date not stated.",
+   "source": "https://help.instagram.com/1631821640426723/"
+  },
+  {
+   "platform": "YouTube",
+   "change": "From 2025-03-31 Shorts views count every start or replay with no minimum watch time.",
+   "source": "https://support.google.com/youtube/answer/10059070?hl=en"
+  },
+  {
+   "platform": "YouTube",
+   "change": "Official Artist Channels: square or vertical videos up to 3 minutes uploaded on or after 2025-12-08 are classified as Shorts (standard channels since 2024-10-15).",
+   "source": "https://support.google.com/youtube/answer/15424877?hl=en"
+  },
+  {
+   "platform": "YouTube",
+   "change": "Custom thumbnail guidance now recommends 3840x2160 (2160x3840 for Shorts) with up to 50 MB on desktop (2 MB on mobile). Change date not stated.",
+   "source": "https://support.google.com/youtube/answer/72431?hl=en"
+  },
+  {
+   "platform": "Facebook",
+   "change": "June 2025: Videos tab renamed Reels; all videos posted to Facebook (except stories and live) are shared as reels of any length or orientation. Help Centre update dated September 2025 confirms the unification.",
+   "source": "https://www.facebook.com/business/help/2683452421955589"
+  },
+  {
+   "platform": "Snapchat",
+   "change": "From 2025-02-01 eligible creators can monetize Spotlight videos longer than 1 minute (unified Monetization Program).",
+   "source": "https://newsroom.snap.com/snapchat-new-creator-monetization"
+  },
+  {
+   "platform": "Threads",
+   "change": "2025-09-04: text attachments of up to 10,000 characters can be added to a post (base post limit stays 500).",
+   "source": "https://about.fb.com/news/2025/09/attach-text-threads-posts-share-longer-perspectives/"
+  },
+  {
+   "platform": "TikTok",
+   "change": "No dated 2025/2026 spec change confirmed in official TikTok sources. Current Support page: record up to 10 min, upload up to 60 min; photo posts up to 35 images.",
+   "source": "https://support.tiktok.com/en/using-tiktok/creating-videos/camera-tools"
+  },
+  {
+   "platform": "X (Twitter)",
+   "change": "No dated 2025/2026 spec change confirmed. Current Help Center: Premium uploads up to 4 hours / 16 GB, non-Premium 140 s / 512 MB.",
+   "source": "https://help.x.com/en/using-x/x-videos"
+  },
+  {
+   "platform": "LinkedIn",
+   "change": "No dated 2025/2026 spec change confirmed; video help page shows 15 min max for all uploads (older pages said 10 min on mobile).",
+   "source": "https://www.linkedin.com/help/linkedin/answer/a548372"
+  },
+  {
+   "platform": "Pinterest",
+   "change": "No dated 2025/2026 spec change confirmed.",
+   "source": "https://help.pinterest.com/en/business/article/pinterest-product-specs"
+  }
+ ]
+}
